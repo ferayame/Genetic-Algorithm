@@ -6,7 +6,6 @@
 * [ ] Optimiser le Taux d'apprentissage
 * [ ] Optimiser les Paramètres de régularisation
 * [ ] Optimiser Les poids et les biais (paramètres du MLP)
-* [ ] Utilisez un AG pour optimiser les hyperparamètres **ou** les paramètres du MLP
 * [ ] Affichez l'évolution de l'erreur de classification (fitness) au fil des générations.
 
 **INDICATIONS:**
