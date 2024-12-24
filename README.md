@@ -5,9 +5,9 @@
 
 * En utilisant l'AG optimiser:
 
-* [ ] Le Nombre de neurones dans la couche cachée
-* [ ] Le Taux d'apprentissage
-* [ ] Les Paramètres de régularisation
+* [X] Le Nombre de neurones dans la couche cachée
+* [X] Le Taux d'apprentissage
+* [X] Les Paramètres de régularisation
 * [ ] Les poids et les biais (paramètres du MLP)
 * [ ] Affichez l'évolution de l'erreur de classification (fitness) au fil des générations.
 
