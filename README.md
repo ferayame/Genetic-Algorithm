@@ -1,29 +1,35 @@
-# Genetic-Algorithm
+# Genetic Algorithm
 
-* [X] Utilisez une version simplifiée du dataset MNIST en ne sélectionnant que les chiffres 0 et 1 pour une tâche de classification binaire(classe 0 ou classe 1).
-* [X] Implémentez un MLP avec la bibliothèque scikit-learn (MLPClassifier) ou une autre bibliothèque similaire.
+L'objectif de ce travaille est d'amélioré les hypermaramètre d'un **MLP** en utilisant **l'Algorithme Génétique**.
 
-* En utilisant l'AG optimiser:
+Le jeu de données utilisé est **MNIST** siplifier (*on a pris juste les 0s et les 1s*)
 
-* [X] Le Nombre de neurones dans la couche cachée
-* [X] Le Taux d'apprentissage
-* [X] Les Paramètres de régularisation
-* [ ] Les poids et les biais (paramètres du MLP)
-* [ ] Affichez l'évolution de l'erreur de classification (fitness) au fil des générations.
 
-**INDICATIONS:**
+## La population initiale
 
-* [X] Définir le chromosome (individu) et taille de la population
-* [X] **Évaluation (fitness)** : Pour chaque individu, entraînez le MLP et calculez l'erreur de classification sur un ensemble de validation.
-* [X] Utilisez la méthode de roulette pour choisir les individus pour la reproduction.
+La population initiale est une solution d'une **Algorithme Génétique**, et on vise à optimisé cette solution. Dans ce cas, les gènes d'un chromosome sont: ***Le nombre de Neurones dans la couche cachée***, ***Le taux d'apprentissage***, ***Les paramètres de régularisation (alpha dans MLP)***, ***Les poids*** et ***les biais***. 
 
-Si la fonction de perte initiale est Erreur(yprédit,yvrai), après régularisation elle devient :
+La taille de population dépends de nombre de neurones dans la couche d'antrées.
 
-![1734877918958](image/README/1734877918958.png)
+## Évaluation (fitness)
 
-Une valeur λ élevée applique une forte pénalisation, rendant le modèle plus simple pour éviter le sur-apprentissage. Tandis que, une valeur λ faible réduit l'effet de la régularisation, laissant plus de liberté au modèle pour s'ajuster. Dans un MLP, ce paramètre est souvent appelé alpha dans des bibliothèques comme scikit-learn.
+Entraînement de MLP, et calcule d'erreur de classification.
 
-![1734945690140](image/README/1734945690140.png)
+## Séléction
+
+La méthode de **Roulette** est choisi pour le séléction.
+
+## Critères d'arrêt
+
+Nombre de génération.
+
+## Croisement Arithmétique
+
+alpha entre 0 et 1.
+
+Enfant1 = alpha x Parent1 + (1 - alpha) x Parent2
+
+Enfant2 = (1 - alpha) x Parent1 + alpha x Parent2
 
 # Results
 
