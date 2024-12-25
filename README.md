@@ -32,7 +32,4 @@ We chose *the number of generations* as the termination cretiria.
 
 # Results
 
-* [ ] Affichez les meilleurs hyperparamètres et leur erreur associée pour chaque génération.
-* [ ] Visualisez l'évolution de l'erreur minimale de classification.
-* [ ] Graphique montrant l'évolution de la précision
-* [ ] Comparer et discuter les résultats obtenus par MLP seul puis MLP optimisé par AG.
+* The accuracy after the optimization of the hyperparameters became higher then the accuracy before it. We conclude that the GA is helpful when it comes to choosing the best parameters for the model.
