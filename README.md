@@ -3,7 +3,7 @@
 This work aims to optimize the hyperparameters of an **MLP** based on the **genetic algorithm**.
 The dataset used is simplified **MNIST** (we only took the 0s and 1s).
 
-> To run the program use `python version 3.9.11` use the following link to download it [python 3.9.11]()
+> To run the program use `python version 3.9.11` you can use the following link to download it [python 3.9.11]()
 
 ## Chromosomes
 
