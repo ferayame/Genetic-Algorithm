@@ -1,28 +1,24 @@
 # Genetic Algorithm
 
-L'objectif de ce travaille est d'amélioré les hypermaramètre d'un **MLP** en utilisant **l'Algorithme Génétique**.
+This work aims to optimize the hyperparameters of an **MLP** based on the **genetic algorithm**.
+The dataset used is simplified **MNIST** (we only took the 0s and 1s).
 
-Le jeu de données utilisé est **MNIST** siplifier (*on a pris juste les 0s et les 1s*)
+> To run the program use `python version 3.9.11` use the following link to download it [python 3.9.11]()
 
-## La population initiale
+## Chromosomes
 
-La population initiale est une solution d'une **Algorithme Génétique**, et on vise à optimisé cette solution. Dans ce cas, les gènes d'un chromosome sont: ***Le nombre de Neurones dans la couche cachée***, ***Le taux d'apprentissage***, ***Les paramètres de régularisation (alpha dans MLP)***, ***Les poids*** et ***les biais***.
+Chromosomes are the potential solutions of a **Genetic Algorithm**, and we seek for optimizing those solutions. In this context, the genes of a chromosome include: ***The number of neurons present in the hidden layer***, ***the learning rate***, ***the regularization parameter (alpha in MLP)***, ***the weights*** and ***the biases***.
+The size of the population: 10.
 
-La taille de population dépends de nombre de neurones dans la couche d'antrées.
-
-## Évaluation (fitness)
+## Fitness Evaluation
 
 Entraînement de MLP, et calcule d'erreur de classification.
 
-## Séléction
+## Parents' Selection
 
-La méthode de **Roulette** est choisi pour le séléction.
+We used the **Roulette wheel selection**.
 
-## Critères d'arrêt
-
-Nombre de génération.
-
-## Croisement Arithmétique
+## Arithmetical Crossover
 
 alpha entre 0 et 1.
 
@@ -30,9 +26,9 @@ Enfant1 = alpha x Parent1 + (1 - alpha) x Parent2
 
 Enfant2 = (1 - alpha) x Parent1 + alpha x Parent2
 
-# Notes
+## Termination
 
-* The number of generations affect the work of the genetic algorithm, a big number can lead to its divergence. Précision du MLP optimisé par AG: 0.9976 avec un nombre de génération = 50.
+We chose *the number of generations* as the termination cretiria.
 
 # Results
 
