@@ -32,4 +32,4 @@ We chose *the number of generations* as the termination cretiria.
 
 # Results
 
-* The accuracy after the optimization of the hyperparameters became higher then the accuracy before it. We conclude that the GA is helpful when it comes to choosing the best parameters for the model.
+* The accuracy after the optimization of the hyperparameters became higher then the accuracy before it (from 0.9988 to 0.9992). We conclude that the GA is helpful when it comes to choosing the best parameters for the model.
